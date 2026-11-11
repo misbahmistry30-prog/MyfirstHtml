@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Academy</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #eaf0fa;
+            color: #102b50;
+            line-height: 1.6;
+        }
+
+        /* HEADER WITH BACKGROUND IMAGE */
+        header {
+            background-image:url("school2.jpeg");
+                linear-gradient(rgba(0,20,60,0.55),
+                rgba(0,20,60,0.65)),
+                url("images/school.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 350px;
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            color: #ffca3a;
+            font-size: 45px;
+            margin-top: 80px;
+        }
+
+        header p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #061f49;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffca3a;
+        }
+
+        /* SECTIONS */
+        section {
+            background-color: white;
+            width: 85%;
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+            scroll-margin-top: 65px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #073477;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 4px;
+            background-color: #ffca3a;
+            margin: 8px auto;
+        }
+
+        /* ACTIVITIES */
+        .activities {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .activity-card {
+            width: 300px;
+            padding: 12px;
+            text-align: center;
+            background-color: #f0f4fc;
+            border-radius: 10px;
+        }
+
+        .activity-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .activity-card h3 {
+            color: #073477;
+        }
+
+        /* SUBJECTS */
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .subjects li {
+            background-color: #073477;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 4px solid #ffca3a;
+            border-radius: 6px;
+        }
+
+        /* MEDIA */
+        .media-section {
+            background-color: #073477;
+            color: white;
+        }
+
+        .media-section h2 {
+            color: #ffca3a;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 750px;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #061f49;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            border-top: 6px solid #ffca3a;
+        }
+
+        footer p:last-child {
+            color: #ffca3a;
+            font-weight: bold;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+                font-size: 14px;
+            }
+
+            section {
+                width: 88%;
+                padding: 15px;
+            }
+
+            .activity-card {
+                width: 100%;
+            }
+
+            video {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HOME HEADER -->
+    <header id="home">
+        <h1>BRIGHT FUTURE ACADEMY</h1>
+        <p>INSPIRING MINDS, CREATING FUTURES</p>
+        <p>Welcome to a place of knowledge, creativity and excellence.</p>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#activities">Activities</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- ABOUT US -->
+    <section id="about">
+        <h2>About Our School</h2>
+
+        <p>
+            Welcome to Bright Future Academy, a place where learners
+            discover their talents, develop knowledge and build a
+            brighter future. We provide quality education in a friendly
+            and supportive environment where every student is encouraged
+            to achieve their full potential.
+        </p>
+
+        <p>
+            Our mission is to inspire young minds through quality
+            education, discipline, creativity and teamwork.
+        </p>
+    </section>
+
+    <!-- SCHOOL ACTIVITIES -->
+    <section id="activities">
+        <h2>Our School Activities</h2>
+
+        <div class="activities">
+
+            <div class="activity-card">
+                <img src="classroom.jpg"
+                     alt="Students learning in a classroom">
+
+                <h3>Classroom Learning</h3>
+
+                <p>
+                    We encourage teamwork, creativity and academic excellence.
+                </p>
+            </div>
+
+            <div class="activity-card">
+                <img src="sports.jpg"
+                     alt="Students participating in sports">
+
+                <h3>Sports</h3>
+
+                <p>
+                    Students participate in sports to develop teamwork
+                    and physical fitness.
+                </p>
+            </div>
+
+            <div class="activity-card">
+                <img src="science.jpg"
+                     alt="Students doing science activities">
+
+                <h3>Science Activities</h3>
+
+                <p>
+                    We encourage practical learning and scientific discovery.
+                </p>
+            </div>
+
+        </div>
+
+        <h2>Extracurricular Activities</h2>
+
+        <ul>
+            <li>Football</li>
+            <li>Music and Dance</li>
+            <li>Debate Club</li>
+            <li>Drama Club</li>
+            <li>Art and Drawing</li>
+            <li>Swimming</li>
+        </ul>
+    </section>
+
+    <!-- SUBJECTS -->
+    <section id="subjects">
+        <h2>Subjects We Offer</h2>
+
+        <ul class="subjects">
+            <li>Mathematics</li>
+            <li>English</li>
+            <li>Kiswahili</li>
+            <li>Science</li>
+            <li>Computer Studies</li>
+            <li>Geography</li>
+            <li>History</li>
+            <li>Business Studies</li>
+        </ul>
+    </section>
+
+    <!-- WELCOME AUDIO -->
+    <section class="media-section">
+        <h2>Welcome Message</h2>
+
+        <p>Listen to our school welcome message.</p>
+
+        <audio controls>
+            <source src="welcome.mp3.ogg" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+
+    <!-- SCHOOL VIDEO -->
+    <section class="media-section">
+        <h2>Our School in Action</h2>
+
+        <p>Watch some of our school activities.</p>
+
+        <video controls>
+            <source src="Learning.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p><strong>Email:</strong><a href="https://mail.google.com/mail?view=cm&fs=1&to=brightfutureacademy258@gmail.com" 
+            target="_blank"> brightfutureacademy258@gmail.com </a></p>
+        <p><strong>Phone:</strong> +254 700 000 000</p>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Bright Future Academy. All Rights Reserved.</p>
+        <p>Inspiring Minds, Creating Futures.</p>
+    </footer>
+
+</body>
+</html>
+
